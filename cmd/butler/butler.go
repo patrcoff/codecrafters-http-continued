@@ -368,8 +368,8 @@ func (p serveDir) returnFile(r request) response {
         fmt.Println("file contents:\n", string(r.body))
         err := os.WriteFile(path, r.body, 0666)
         if err != nil {
-            return response{version: "HTTP/1.1", statusCode: 500, statusText: "Server Error"}
             fmt.Println("Error savin file to server:\n", err)
+            return response{version: "HTTP/1.1", statusCode: 500, statusText: "Server Error"}
         }
         
         return response{version: "HTTP/1.1", statusCode: 201, statusText: "Created"}
@@ -403,7 +403,7 @@ func returnEcho(r request) response {
 func main() {
 	// You can use print statements as follows for debugging, they'll be visible when running tests.
 	fmt.Println("Logs from your program will appear here!")
-    dir := flag.String("directory", "/", "directory which hosts files to serve")
+    dir := flag.String("directory", "", "directory which hosts files to serve")
     flag.Parse()
 
     s := makeHttpServer("127.0.0.1", "4221", 1024, "")
