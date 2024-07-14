@@ -1,7 +1,7 @@
 # codecrafters-http-continued
 A continuation of my solution to the CodeCrafters HTTP Server Challenge written in Go.
 
-[CodeCrafters](https://app.codecrafters.io) is a learning platform geared at programmers beyond the beginner stage (in their words, 'seasoned developers'), focusing on learning by doing through what they call "challanges". In these challenges you are lightly guided through building simple replications of common software products/tools (such as git, redos etc). It is far from just another tutorial site - I highly recommend trying them out!
+[CodeCrafters](https://app.codecrafters.io) is a learning platform geared at programmers beyond the beginner stage (in their words, 'seasoned developers'), focusing on learning by doing through what they call "challanges". In these challenges you are lightly guided through building simple replications of common software products/tools (such as git, redis etc). It is far from just another tutorial site - I highly recommend trying them out!
 
 ![Challenge Complete: Progress Banner](https://backend.codecrafters.io/progress/http-server/5565d37e-a396-4f8f-bd16-52e3eb9174dc)
 
